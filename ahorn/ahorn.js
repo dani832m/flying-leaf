@@ -5,7 +5,7 @@ const leafDiv = document.createElement("div");
 const leafP1 = document.createElement("p");
 const leafP2 = document.createElement("p");
 const leafHeading = document.createTextNode("VIDSTE DU AT…");
-const leafContent = document.createTextNode("HM Dronningen er protektor for fideicommiset.");
+const leafContent = document.createTextNode("HM Dronningen er protektor for fideicommiset?");
 const keyframes = document.createElement("style");
 
 // Appending to DOM
@@ -18,10 +18,10 @@ leafP2.appendChild(leafContent);
 
 // Styles for leaf div element
 leafDiv.style.width = "350px";
-leafDiv.style.height = "389px";
+leafDiv.style.height = "390px";
 leafDiv.style.position = "fixed";
 leafDiv.style.right = "-500px";
-leafDiv.style.bottom = "40px";
+leafDiv.style.bottom = "20px";
 leafDiv.style.backgroundImage = "url('ahorn.png')";
 leafDiv.style.display = "flex";
 leafDiv.style.flexDirection = "column";
@@ -33,15 +33,15 @@ leafDiv.style.animation = "flying-leaf 2s linear 5s forwards";
 
 // Styles for leaf paragraph #1 element (Heading)
 leafP1.style.textAlign = "center";
-leafP1.style.margin = "120px 0 10px -10px";
+leafP1.style.margin = "85px 0 10px -65px";
 leafP1.style.fontSize = "22px";
 leafP1.style.opacity = 0;
 leafP1.style.animation = "fading-text 1.2s linear 7.2s forwards";
 
 // Styles for leaf paragraph #2 element (Content)
 leafP2.style.textAlign = "center";
-leafP2.style.margin = "0 0 0 -10px";
-leafP2.style.padding = "0 60px";
+leafP2.style.margin = "0 0 0 -65px";
+leafP2.style.padding = "0 80px";
 leafP2.style.fontSize = "20px";
 leafP2.style.opacity = 0;
 leafP2.style.animation = "fading-text 1.2s linear 7.2s forwards";
@@ -55,7 +55,7 @@ keyframes.sheet.insertRule(`
     }
     100% {
       opacity: 1;
-      right: 40px;
+      right: 20px;
       transform: translateX(0px) translateY(0px) skewY(0deg) rotate(0deg);
     }
   }
