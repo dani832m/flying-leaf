@@ -19,6 +19,7 @@ leafP1.appendChild(leafHeading);
 leafP2.appendChild(leafContent);
 
 // Styles for leaf div element
+leafDiv.style.zIndex = "99998";
 leafDiv.style.width = "475px";
 leafDiv.style.height = "251px";
 leafDiv.style.position = "fixed";
@@ -34,18 +35,20 @@ leafDiv.style.lineHeight = "1.30";
 leafDiv.style.animation = "flying-leaf 2.2s linear 5s forwards";
 
 // Styles for leaf paragraph #1 element (Heading)
+leafP1.style.zIndex = "99999";
 leafP1.style.textAlign = "center";
 leafP1.style.margin = "-15px -50px 10px 0";
 leafP1.style.fontSize = "22px";
-leafP1.style.opacity = 0;
+leafP1.style.opacity = "0";
 leafP1.style.animation = "fading-text 1.2s linear 7.4s forwards";
 
 // Styles for leaf paragraph #2 element (Content)
+leafP2.style.zIndex = "99999";
 leafP2.style.textAlign = "center";
 leafP2.style.margin = "0 0 0 -12px";
 leafP2.style.padding = "0 100px";
 leafP2.style.fontSize = "20px";
-leafP2.style.opacity = 0;
+leafP2.style.opacity = "0";
 leafP2.style.animation = "fading-text 1.2s linear 7.4s forwards";
 
 // Adding keyframe flying-leaf to style element
