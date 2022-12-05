@@ -5,9 +5,7 @@ const leafDiv = document.createElement("div");
 const leafP1 = document.createElement("p");
 const leafP2 = document.createElement("p");
 const leafHeading = document.createTextNode("VIDSTE DU AT…");
-const leafContent = document.createTextNode(
-  "I dag er hovedparten af de danske skove kulturskov, der er tilplantede for at fremme skovdrift?"
-);
+const leafContent = document.createTextNode("Klimaskove tilplantes med træarter, der kan optage store mængder CO2?");
 const keyframes = document.createElement("style");
 
 // Appending to DOM
@@ -20,36 +18,36 @@ leafP2.appendChild(leafContent);
 
 // Styles for leaf div element
 leafDiv.style.zIndex = "99998";
-leafDiv.style.width = "475px";
-leafDiv.style.height = "251px";
+leafDiv.style.width = "400px";
+leafDiv.style.height = "344px";
 leafDiv.style.position = "fixed";
 leafDiv.style.right = "-850px";
 leafDiv.style.bottom = "20px";
-leafDiv.style.backgroundImage = "url('boeg.png')";
+leafDiv.style.backgroundImage = "url('oak.png')";
 leafDiv.style.display = "flex";
 leafDiv.style.flexDirection = "column";
 leafDiv.style.justifyContent = "center";
 leafDiv.style.color = "#fff";
 leafDiv.style.fontFamily = "'Manrope', Arial, sans-serif";
 leafDiv.style.lineHeight = "1.30";
-leafDiv.style.animation = "flying-leaf 2.2s linear 5s forwards";
+leafDiv.style.animation = "flying-leaf 2.5s linear 5s forwards";
 
 // Styles for leaf paragraph #1 element (Heading)
 leafP1.style.zIndex = "99999";
 leafP1.style.textAlign = "center";
-leafP1.style.margin = "-15px -50px 10px 0";
+leafP1.style.margin = "-10px 0 10px -90px";
 leafP1.style.fontSize = "22px";
 leafP1.style.opacity = "0";
-leafP1.style.animation = "fading-text 1.2s linear 7.4s forwards";
+leafP1.style.animation = "fading-text 1.2s linear 7.7s forwards";
 
 // Styles for leaf paragraph #2 element (Content)
 leafP2.style.zIndex = "99999";
 leafP2.style.textAlign = "center";
-leafP2.style.margin = "0 0 0 -12px";
-leafP2.style.padding = "0 100px";
+leafP2.style.margin = "0 -20px 0 0";
+leafP2.style.padding = "0 80px";
 leafP2.style.fontSize = "20px";
 leafP2.style.opacity = "0";
-leafP2.style.animation = "fading-text 1.2s linear 7.4s forwards";
+leafP2.style.animation = "fading-text 1.2s linear 7.7s forwards";
 
 // Adding keyframe flying-leaf to style element
 keyframes.sheet.insertRule(`
